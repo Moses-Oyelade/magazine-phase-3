@@ -6,6 +6,8 @@ class Author:
         self.name=name
         self.Article = Article
         self.Magazine = Magazine
+        Author.add_article(self)
+        
         
     def get_name(self):
         # print("name inserted")
@@ -16,6 +18,11 @@ class Author:
 
     def get_magazines(self, author_name):
         return [item for item in Magazine if author_name == item]
+
+    @classmethod
+    def add_article(self, magazine, title):
+        
+        
 
 
 author1 = Author("John Humphrey")
