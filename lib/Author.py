@@ -21,7 +21,7 @@ class Author:
 
     @classmethod
     def add_article(self, magazine, title):
-        
+        print(f"This {Article} wit the title: {title} is inspired by {Author} in {magazine}")
         
 
 
